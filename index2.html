@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="dropdown-container"></div>
+    <button onclick="mostrarTab('menu1')" class="buttons">Somos NUEVA EPS ▾</button>
+    
+    <div id="menu1" class="contenido-tab" style="display:none;">
+        <a href="#">Quiénes Somos</a>
+        <a href="#">Sedes Administrativas</a>
+        <a href="#">Estructura Organizacional</a>
+        <a href="#">Nuestros Accionistas y Socios</a>
+    </div>
+</div>
+<script>
+function mostrarTab(idTab) {
+    let contenidos = document.getElementsByClassName("contenido-tab");
+    for (let i = 0; i < contenidos.length; i++) {
+        // Si ya está abierto, lo cerramos al hacer clic de nuevo (opcional)
+        if (contenidos[i].id !== idTab) {
+            contenidos[i].style.display = "none";
+        }
+    }
+    
+    // Toggle: Si está oculto lo muestra, si está mostrado lo oculta
+    let elemento = document.getElementById(idTab);
+    if (elemento.style.display === "block") {
+        elemento.style.display = "none";
+    } else {
+        elemento.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

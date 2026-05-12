@@ -1,0 +1,98 @@
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.buttons{
+    display: inline-block;
+    text-decoration: none;
+    border:none;
+    background-color: transparent; 
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+} 
+
+
+/* cyberpunk mode */
+.buttons:hover {
+    text-shadow: -2px 0px 0px #00feff, 2px 0px 0px #ff4d00;
+    border-color: white;
+    transform: scale(1.05); 
+} 
+
+.buttons:hover {
+    /* 3. Hover Styles (The "Bright" version) */
+    color: #ffffff; 
+    border-color: #ffffff;
+    background-color: #162a44; /* Subtle background lighten */
+    /* Adds a smooth outer glow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    /* Optional: adds that chromatic "blue/red" tint from your image smoothly */
+    text-shadow: -1px 0px 0px rgba(0, 255, 255, 0.5),1px 0px 0px rgba(255, 80, 0, 0.5);
+}
+
+
+
+
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.logomain{
+    justify-content: center;
+
+}
+
+.body{
+    /* background:black; */
+    background: #12263A;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*  --------------------------------------------tabs of index2.html------------------------------------*/
+
+/* Contenedor relativo para que el menú se posicione respecto al botón */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del menú desplegable */
+.contenido-tab {
+    position: absolute; /* Esto hace que "flote" */
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombrita como la de la imagen */
+    padding: 12px 16px;
+    z-index: 1; /* Para que esté por encima de todo */
+    border-radius: 4px;
+}
+
+/* Estilo de los enlaces dentro del menú */
+.contenido-tab a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block; /* Uno debajo de otro */
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contenido-tab a:hover {
+    background-color: #f9f9f9;
+}
+/* ------------------------------------------------------End tabs--------------------------------------------- */
