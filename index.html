@@ -9,18 +9,28 @@
 <body class="body">
     <header class="navegacion">
         <ul class="navegacion logomain">
-        <img src="img/valorant.png" alt="Logo de Valorant" class="logo">
+        <img src="img/icon.png" alt="Logo de Valorant" class="logo">
         <h1 style="color: white;"><i>Expresarte</i></h1>
         </ul>
     </header>
         <ul class="navegacion">
+        <div class="sub-navegacion">
             <li><button onclick="mostrarTab('tabla1')" class="buttons">Brand identitty</button></li>
             <li><button onclick="mostrarTab('tabla2')" class="buttons">Printed</button></li>
-            <li><button onclick="mostrarTab('tabla3')" class="buttons">Digital design</button></li>
-            <li><button onclick="mostrarTab('tabla3')" class="buttons">Printed and graphic production</button></li>
-            <li><button onclick="mostrarTab('tabla3')" class="buttons">Editorial design</button></li>
+            
+
+
+            <div><button onclick="toggleMenu(0)" class="buttons button-header">Digital design</button></div>
+            
+            
+
+            <li><button onclick="mostrarTab('tabla4')" class="buttons">Printed and graphic production</button></li>
+            <li><button onclick="mostrarTab('tabla5')" class="buttons">Editorial design</button></li>
+        </div>
         </ul>
-    <div id="tabla1" class="contenido-tab">
+        <ul>
+
+    <!-- <div id="tabla1" class="contenido-tab"> 
         <h3>Tabla Uno</h3>
         <table border="1">
             <tr><th>Encabezado 1</th><th>Encabezado 2</th></tr>
@@ -29,18 +39,29 @@
     </div>
     <div id="tabla2" class="contenido-tab" style="display:none;">
         <h3>Tabla Dos</h3>
-        <table border="1">
-            <tr><th>Producto</th><th>Precio</th></tr>
-            <tr><td>Manzanas</td><td>$1.00</td></tr>
-        </table>
-    </div>
+        <button type="button" onclick="window.location.href='intent/dorpdown1.html'">Volver a Tabla 1</button>
+    </div> -->
+            <div id="tabla3" class="myMenu hide menu-box">
+
+                <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+
+                <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
+            </div>
+        </ul>
+
     <script>
-        function mostrarTab(idTab) {
-            let contenidos = document.getElementsByClassName("contenido-tab");
-            for (let i = 0; i < contenidos.length; i++) {
-                contenidos[i].style.display = "none";
-            }
-            document.getElementById(idTab).style.display = "block";
+        // function mostrarTab(idTab) {
+        //     let contenidos = document.getElementsByClassName("contenido-tab");
+        //     for (let i = 0; i < contenidos.length; i++) {
+        //         contenidos[i].style.display = "none";
+        //     }
+        //     document.getElementById(idTab).style.display = "block";
+        // }
+        
+
+        function toggleMenu(index) {
+            var menu = document.getElementsByClassName("myMenu")[index];
+            menu.classList.toggle("show");
         }
     </script>
 </body>

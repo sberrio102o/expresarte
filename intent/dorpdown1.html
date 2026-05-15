@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="dorpdown1.css">
+</head>
+<body style="background-color: black;">
+    <header>
+        <ul>
+            <h1 style="color: white;"><i>Crearte</i></h1>
+        
+            <div style="position: relative; display: inline-block;">
+        
+            <button onclick="toggleMenu(0)">Click Me</button>
+
+            <div class="myMenu hide menu-box">
+                <p>Item 1</p>
+                <p>Item 2</p>
+            </div>
+
+            <button onclick="toggleMenu(1)">Click Me Too</button>
+
+            <div class="myMenu hide menu-box">
+                <p>Item A</p>
+                <p>Item B</p>            
+            </div>
+            </div>
+        </ul>
+
+
+    </header>   
+
+    <script>
+        function toggleMenu(index) {
+            // [index] means the element at the specified position with the class "myMenu"
+            var menu = document.getElementsByClassName("myMenu")[index];
+            menu.classList.toggle("show");
+        }
+    </script>
+
+
+</body>
+</html>

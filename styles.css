@@ -1,6 +1,16 @@
 
 .navegacion{
     display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.navegacion{
+    display: flex;
     justify-content: space-between;
     padding: 10px;
     list-style-type: none;
@@ -25,19 +35,13 @@
     text-shadow: -2px 0px 0px #00feff, 2px 0px 0px #ff4d00;
     border-color: white;
     transform: scale(1.05); 
-} 
-
-.buttons:hover {
-    /* 3. Hover Styles (The "Bright" version) */
     color: #ffffff; 
     border-color: #ffffff;
-    background-color: #162a44; /* Subtle background lighten */
-    /* Adds a smooth outer glow */
+    background-color: #162a44; 
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    /* Optional: adds that chromatic "blue/red" tint from your image smoothly */
     text-shadow: -1px 0px 0px rgba(0, 255, 255, 0.5),1px 0px 0px rgba(255, 80, 0, 0.5);
 }
-
+/* final cyperpunk mode */
 
 
 
@@ -63,36 +67,34 @@
 }
 
 
+                                                            
+        /* This is the shortest way to hide something */
+.hide { display: none; }
+        /* This makes it show up */
+.show { display: block; }
 
-/*  --------------------------------------------tabs of index2.html------------------------------------*/
-
-/* Contenedor relativo para que el menú se posicione respecto al botón */
-.dropdown-container {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilo del menú desplegable */
-.contenido-tab {
-    position: absolute; /* Esto hace que "flote" */
-    background-color: white;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombrita como la de la imagen */
-    padding: 12px 16px;
-    z-index: 1; /* Para que esté por encima de todo */
-    border-radius: 4px;
-}
-
-/* Estilo de los enlaces dentro del menú */
-.contenido-tab a {
-    color: #333;
+.menu-box {
+    position: absolute; 
+    top: 40%;          
+    left: 40%;            
+    z-index: 999;       
+    background-color: black;
+    color: white;
     padding: 10px;
-    text-decoration: none;
-    display: block; /* Uno debajo de otro */
-    border-bottom: 1px solid #f0f0f0;
+    width: 200px;
+    /* position: absolute;  
+    z-index: 999;        
+    background: white;   
+    border: 1px solid black;
+    width: 120px;
+    top: 100%;           
+    left: 0; */
 }
 
-.contenido-tab a:hover {
-    background-color: #f9f9f9;
+.button-header {
+    position: relative; /* Needed for the dropdown to position correctly */
+    display: inline-block; /* Keeps the button's size to its content */
 }
-/* ------------------------------------------------------End tabs--------------------------------------------- */
+
+                                                            
+
