@@ -1,7 +1,6 @@
 
 .navegacion{
     display: flex;
-    position: relative;
     justify-content: space-between;
     padding: 10px;
     list-style-type: none;
@@ -9,13 +8,15 @@
     padding-right: 30px;
 }
 
-.navegacion{
+.navegacion-main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     list-style-type: none;
     padding-left: 20px;
     padding-right: 30px;
+    flex-direction: row;
+    position: relative;
 }
 
 .buttons{
@@ -75,20 +76,11 @@
 
 .menu-box {
     position: absolute; 
-    top: 40%;          
-    left: 40%;            
-    z-index: 999;       
     background-color: black;
     color: white;
     padding: 10px;
     width: 200px;
-    /* position: absolute;  
-    z-index: 999;        
-    background: white;   
-    border: 1px solid black;
-    width: 120px;
-    top: 100%;           
-    left: 0; */
+    margin-top: 30px;
 }
 
 .button-header {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formal try</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="body">
     <header class="navegacion">
@@ -13,52 +13,50 @@
         <h1 style="color: white;"><i>Expresarte</i></h1>
         </ul>
     </header>
-        <ul class="navegacion">
-        <div class="sub-navegacion">
-            <li><button onclick="mostrarTab('tabla1')" class="buttons">Brand identitty</button></li>
-            <li><button onclick="mostrarTab('tabla2')" class="buttons">Printed</button></li>
-            
 
-
-            <div><button onclick="toggleMenu(0)" class="buttons button-header">Digital design</button></div>
-            
-            
-
-            <li><button onclick="mostrarTab('tabla4')" class="buttons">Printed and graphic production</button></li>
-            <li><button onclick="mostrarTab('tabla5')" class="buttons">Editorial design</button></li>
+    <nav class="navegacion-main">
+        <div><button onclick="toggleMenu(0)" class="buttons button-header wrapper">Brand identitty</button></div>
+        <div class="myMenu hide menu-box">
+            <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+            <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
         </div>
-        </ul>
-        <ul>
+            
 
-    <!-- <div id="tabla1" class="contenido-tab"> 
-        <h3>Tabla Uno</h3>
-        <table border="1">
-            <tr><th>Encabezado 1</th><th>Encabezado 2</th></tr>
-            <tr><td>Dato 1</td><td>Dato 2</td></tr>
-        </table>
-    </div>
-    <div id="tabla2" class="contenido-tab" style="display:none;">
-        <h3>Tabla Dos</h3>
-        <button type="button" onclick="window.location.href='intent/dorpdown1.html'">Volver a Tabla 1</button>
-    </div> -->
-            <div id="tabla3" class="myMenu hide menu-box">
+        <div><button onclick="toggleMenu(1)" class="buttons button-header wrapper">Printed</button></div>
+        <div class="myMenu hide menu-box">
+            <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+            <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
+        </div>
+            
 
-                <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+        <div><button onclick="toggleMenu(2)" class="buttons button-header wrapper">Digital design</button></div>
+        <div class="myMenu hide menu-box">
+            <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+            <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
+        </div>
+            
 
-                <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
-            </div>
-        </ul>
+        <div><button onclick="toggleMenu(3)" class="buttons button-header wrapper">Printed and graphic production</button></div>
+        <div class="myMenu hide menu-box">
+            <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+            <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
+        </div>
+
+
+        <div><button onclick="toggleMenu(4)" class="buttons button-header wrapper">Editorial design</button></div>
+        <div class="myMenu hide menu-box">
+            <p><button onclick="mostrarTab('tabla3')" class="buttons">Web design</button></p>
+            <p><button onclick="mostrarTab('tabla4')" class="buttons">Motion graphics</button></p>
+        </div>
+            
+    </nav>
+
+
+
+
+
 
     <script>
-        // function mostrarTab(idTab) {
-        //     let contenidos = document.getElementsByClassName("contenido-tab");
-        //     for (let i = 0; i < contenidos.length; i++) {
-        //         contenidos[i].style.display = "none";
-        //     }
-        //     document.getElementById(idTab).style.display = "block";
-        // }
-        
-
         function toggleMenu(index) {
             var menu = document.getElementsByClassName("myMenu")[index];
             menu.classList.toggle("show");
