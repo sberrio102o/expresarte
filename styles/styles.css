@@ -1,9 +1,18 @@
 /* Navegacion */
 .navegacion{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.hnavegacion-main{
+    display: flex;
+    justify-content: space-around;
     padding: 10px;
     list-style-type: none;
+    flex-direction: column;
+    position: relative;
 }
 
 .navegacion-main{
@@ -14,7 +23,17 @@
     flex-direction: row;
     position: relative;
 }
+
+.contactanos{
+    margin-top: 20px;
+    margin-left: 758px;
+    width: 120px;
+}
+
+
+
 /* ======================== */
+
 
 
 
@@ -92,40 +111,45 @@
 
 /*========== boxes positions (bdw it will change) ==========*/
 .position0{
-    margin-top: 30px;
-    margin-left: -950px;
-    width: 277px;
+    margin-top: -15px;
+    margin-left: 285px;
+    width: 293px;
 }
 .position1{
     margin-top: 30px;
-    margin-left: -613px;
-    width:259px;
+    margin-left: -950px;
+    width:277px;
 }
 
 .position2{
+    margin-top: 30px;
+    margin-left: -613px;
+    width: 260px;
+}
+
+.position3{
     margin-top: 30px;
     margin-left: -300px;
     width: 274px;
 }
 
-.position3{
+.position4{
     margin-top: 30px;
     margin-left: 116px;
     width: 300px;
 }
 
-.position4{
+.position5{
     margin-top: 30px;
     margin-left: 658px;
     width: 267px;
 }
 
-.position5{
+.position6{
     margin-top: 30px;
     margin-left: 1030px;
     width: 202px;
 }
-
 /* ======================================== */
 
 
@@ -148,3 +172,7 @@
     display: inline-block; /* Keeps the button's size to its content */
 }
 /* ============================ */                             
+/* index image */
+.ilustration{
+    margin-left: 831px;
+}
