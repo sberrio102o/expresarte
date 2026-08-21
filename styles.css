@@ -123,10 +123,13 @@ body {
     border: 1px solid var(--border-color);
     padding: 10px 20px;
     border-radius: 20px;
+    align-items: center;
     color: var(--text-light);
     text-decoration: none;
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 20px;
     transition: background 0.3s;
+
 }
 
 .btn-outline:hover {
@@ -330,11 +333,12 @@ body {
     font-size: 13px;
 }
 
-/* Colores/Fondos temporales para los Mockups de proyectos */
-.bg-black-glaze { background-color: #111111; color: #fff; border: 1px solid #222;}
-.bg-cruel-sea { background-color: #0c343d; color: #fff; }
-.bg-catalogo { background-color: #5c5470; color: #fff; }
-.bg-color-idea { background-color: #950740; color: #fff; }
+/* Voy a dejar el fondo como "bg-square-base" por que si le cambio el nombre no da 
+PD:no se por que ptm */
+
+.bg-cruel-sea { background-image:url(resources_expresarte/imagenes/Cuadrado_base.svg); height: 165px;width:165px ; }
+
+
 
 .mock-logo {
     font-size: 12px;
