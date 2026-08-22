@@ -8,17 +8,37 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Reserva tu reunión con expresarte </title>
-    <link rel="icon" type="image/x-icon" href="../../imagenes/logo.svg">
+    <link rel="icon" type="image/x-icon" href="../../imagenes/logo.png">
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
-    <form action="" class="formulario">
-      <img src="../../imagenes/logo.svg" class="imgLogo" />
+     <main class="main-container">
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon"><img src="../../imagenes/logo.png" alt="Logo expresarte"></span> 
+            </div>
+            <nav class="nav-links">
+                <a href="../../../index.html">Inicio</a>
+                <a href="#" >Servicios</a>
+                <a href="../../../Contacto.html" >Contacto</a>
+            </nav>
+            <nav>
+            <a href="#"class="btn-outline"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"class="btn-outline"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+        </header>
 
-      <h1 class="formulario__titulo">Expresarte</h1>
-      <h3 class="formulario__subtitulo">Reserva tu reunión</h3>
-      <p class="formulario__parrafo">
-        Llena este pequeño formulario para agendar tu reunión en CREARTE
+
+
+
+    <form action="" class="formulario">
+      <!-- <img src="../../imagenes/logo.svg" class="imgLogo" /> -->
+
+      <h1 class="formulario__titulo">Reserva tu reunión</h1>
+      <p class="formulario__parrafo italic-text">
+        Llena este pequeño formulario para agendar tu reunión en Expresarte
       </p>
 
       <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
@@ -57,8 +77,26 @@
 
       <div id="respuesta"></div>
 
-      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+      <button id="submit" class="formulario__submit btn-primary">Enviar a WhatsApp</button>
     </form>
+    <footer class="footer-banner">
+            <div class="footer-cta">
+                <h3>¿Tienes un proyecto en mente?</h3>
+                <p>Hablemos y hagamos algo extraordinario juntos.</p>
+                <a href="#"class="btn-primary-light">Contáctame</a>
+            </div>
+            <div class="footer-info">
+                <span><i class="fa-regular fa-envelope"></i> expresandonos@hotmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +57 311 687 6773</span>
+                <span><i class="fa-solid fa-location-dot"></i> Medellin, Colombia</span>
+                <div class="footer-socials">
+                    <a href="index.html"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/expresarte.publicidad.y.papel?utm_source=qr&igsi=YTZpdWx2ejd6Y3B0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/sberrio102o/expresarte.git" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+
     <script src="js/form.js"></script>
   </body>
 </html>
